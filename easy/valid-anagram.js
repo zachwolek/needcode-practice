@@ -8,3 +8,13 @@ const isAnagram = (s, t) => {
 }
 
 console.log(isAnagram("racecar", "carrace"))
+
+
+const isAnagram2 = (s, t) => {
+    if (s.split('').sort().join('') === t.split('').sort().join('')){
+        return true
+    } else
+    return false
+}
+
+console.log(isAnagram2("raceca", "carrace"))
